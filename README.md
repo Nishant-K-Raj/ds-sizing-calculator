@@ -49,7 +49,7 @@ Before running the application, ensure you have the following installed:
 
 2. **Run the Application**
 ```bash
-    python app.py
+    python app_local.py
 ```
 3. **Expected Output**
 ```bash
