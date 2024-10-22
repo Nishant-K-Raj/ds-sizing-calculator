@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sizing Calculator</title>
+</head>
+<body>
+<h1>Dynamic Sizing Calculator</h1>
+<form action="/calculate" method="post">
+    <label for="components">Select Components:</label><br>
+    <select name="components" multiple>
+        <option value="CDP Control Plane">CDP Control Plane</option>
+        <option value="CDW Impala">CDW Impala</option>
+        <option value="CML per workspace">CML per workspace</option>
+    </select><br><br>
+
+    <label for="data_size">Data Size (GB):</label>
+    <input type="number" name="data_size" required><br><br>
+
+    <label for="redundancy">Redundancy Factor:</label>
+    <input type="number" name="redundancy" min="1" value="1" required><br><br>
+
+    <label for="scale_factor">Scale Factor:</label>
+    <input type="number" name="scale_factor" step="0.1" value="1" required><br><br>
+
+    <input type="submit" value="Calculate">
+</form>
+</body>
+</html>
